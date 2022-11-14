@@ -5,7 +5,84 @@
     font-family: sans-serif;
 }
 
+/*SECCION HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+}
+
+.header__search_and_login{
+    width: 70%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search_and_login .header__search{
+    width: 393px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 8px 16px;
+}
+
+.header__search input{
+    background-color: #F5F5F5;
+    font-size: 14px;
+    border: none;
+    width: 329px;
+}
+
+.header__search img{
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.header__search_and_login .header__button__login{
+    background-color: #FFF;
+    font-size: 16px;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    width: 182px;
+    height: 51px;
+}
+
+/*FIN SECCION HEADER*/
+
+/*SECCION BANNER*/
 section.banner{
     background: url('../images/image-banner.png') no-repeat center;
     background-size: cover;
+    height: 352PX;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner .banner__text{
+    width: 1136px;
+    height: 170px;
+    color: #FFF;
+    margin-bottom: 32px;
+}
+
+.banner__text .banner__title{
+    font-size: 52px;
+}
+
+.banner__text .banner__decription{
+    font-size: 22px;
+    margin: 16px 0px;
+}
+
+.banner .banner__button{
+    background-color: #2A7AE4;
+    font-size: 16px;
+    border: 1px solid #2A7AE4;
+    color: #FFF;
+    width: 129px;
+    height: 51px;
 }
