@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de estilos css-->ç
+    <link rel="stylesheet" href="./assets/style/agregar-producto.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/images/Logo.png" alt="logo">
+        <div class="header__search_and_login">
+            <label class="header__search" for="search">
+                <input type="search" name="search" id="search" placeholder="¿Que deseas buscar?">
+                <img src="./assets/images/lupa.png" alt="lens">
+            </label>
+            <a href="./productos.html" class="header__button__admin">Menu Administrador</a>
+        </div>
+    </header>
+    <section class="container__form">
+        <h2 class="titulo__form">Agregar Nuevo producto</h2>
+        <form class="form__nuevo__producto" action="">
+            <label class="form__product__label" for="url">URL de la imagen
+                <input class="form__input__product" id="url" name="url" type="url">
+            </label>
+            <label class="form__product__label" for="categoria">Categoria
+                <input class="form__input__product" id="categoria" name="categoria" type="text">
+            </label>
+            <label class="form__product__label" for="nombre">Nombre del producto
+                <input class="form__input__product" id="nombre" name="nombre" type="text">
+            </label>
+            <label class="form__product__label" for="precio">Precio del producto
+                <input class="form__input__product" id="precio" name="precio" type="number">
+            </label>
+            <label class="form__product__label" for="descripcion">Descripcion del producto
+                <textarea class="form__descripcion__product" name="descripcion" id="descripcion"></textarea>
+            </label>
+            <button class="form__submit" type="submit">Agregar producto</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__informaction__contact">
+            <div class="information">
+                <div class="footer__logo">
+                    <img class="logo" src="./assets/images/Logo.png" alt="logo">
+                </div>
+                <ul class="information__list">
+                    <li class="information__item"><a class="item__link" href="#">Quienes Somos</a></li>
+                    <li class="information__item"><a class="item__link" href="#">Politicas de Privacidad</a></li>
+                    <li class="information__item"><a class="item__link" href="#">Programa de fidelidad</a></li>
+                    <li class="information__item"><a class="item__link" href="#">Nuestras Tiendas</a></li>
+                    <li class="information__item"><a class="item__link" href="#">Quiero ser franquiciado</a></li>
+                    <li class="information__item"><a class="item__link" href="#">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4 class="contac__title">Hable con nosotros</h4>
+                <form class="form__contact" action="">
+                    <label class="form__label" for="name">Nombre
+                        <input class="form__input" type="text" name="name" id="name">
+                    </label>
+                    <label class="form__label" for="mensaje">
+                        <textarea class="form__textarea" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    </label>
+                    <button class="form__button" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy;Desarrollado por Matias Gabriel Ortega <br> 2022
+        </div>
+    </footer>
+</body>
+</html>

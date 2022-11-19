@@ -1,0 +1,127 @@
+.caja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 32px 0px 32px;
+}
+
+.caja .titulo{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.caja .boton__agregar{
+    margin: 12px 12px 12px 0px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #2A7AE4;
+}
+
+.boton__agregar a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px 32px 32px;
+}
+
+.producto{
+    width: 140px;
+    height: 249px;
+}
+
+.producto__imagen{
+    position: relative;
+}
+
+.producto__imagen>img{
+    width: 100%;
+    height: 174px;
+}
+
+.producto__imagen button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.producto__imagen .boton__edit{
+    left:110px;
+}
+
+.producto__imagen .boton__borrar{
+    left:80px;
+}
+
+.producto__description p{
+    margin-top: 4px;
+}
+
+.producto__data--name{
+    font-size: 14px;
+}
+
+.producto__data--price{
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+    .productos{
+        justify-content: flex-start;
+    }
+
+    .producto{
+        width: 164px;
+        margin-bottom: 16px;
+        margin-right: 12px;
+    }
+
+    .producto__imagen .boton__edit{
+        left:130px;
+    }
+    
+    .producto__imagen .boton__borrar{
+        left:100px;
+    }
+
+}
+
+@media (min-width: 1024px ) and (max-width: 1920px){
+
+    .caja{
+        width: 80%;
+        margin: auto;
+        padding: 64px 0px 0px 0px;
+    }
+
+    .productos{
+        width: 80%;
+        margin: auto;
+        padding: 32px 0px 64px 0px;
+        justify-content: space-between;
+    }
+
+    .producto{
+        width: 176px;
+        margin-right: 16px;
+    }
+
+    .producto__imagen .boton__edit{
+        left:140px;
+    }
+    
+    .producto__imagen .boton__borrar{
+        left:110px;
+    }
+}

@@ -1,0 +1,58 @@
+.container__login{
+    background-color: #eeeeee;
+    padding: 60px 0;
+}
+
+.input--email{
+    margin-top: 16px;
+}
+
+.form__login{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__login > .form__input{
+    width: 275px;
+    height: 41px;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+}
+
+.form__login .form__button a{
+    text-decoration: none;
+    color: #FFF;    
+}
+
+@media (min-width: 768px) {
+
+    .container__login{
+        padding: 110px 0;
+    }
+
+    .header__search input{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1024px ) and (max-width: 1920px){
+
+    .container__login{
+        padding: 90px 0;
+    }
+
+    .form__login > .form__input{
+        width: 423px;
+        height: 63px;
+    }
+
+    .form__login > .form__button{
+        font-size: 18px;
+        width: 423px;
+        height: 63px;
+    }
+}
